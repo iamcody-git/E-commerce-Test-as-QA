@@ -42,22 +42,5 @@ product = driver.find_element(
 product.click()
 time.sleep(2)
 
-# Add Fleece Jacket to cart
-addcart = driver.find_element(
-    By.XPATH,
-    "//button[@id='add-to-cart-sauce-labs-fleece-jacket']"
-)
-
-addcart.click()
-time.sleep(2)
-
-# Remove Fleece Jacket
-remove = driver.find_element(
-    By.XPATH,
-    "//button[@id='remove-sauce-labs-fleece-jacket']"
-)
-
-remove.click()
-time.sleep(2)
 
 driver.quit()
