@@ -15,9 +15,33 @@ time.sleep(2)
 # )
 
 # locate Username by tagname
+# username = driver.find_element(
+#     By.TAG_NAME,
+#     value="input"
+# )
+
+# locate Username by css selector
+# username = driver.find_element(
+#     By.CSS_SELECTOR,
+#     value="input"
+# )
+
+# locate Username by css selector ID
+# username = driver.find_element(
+#     By.CSS_SELECTOR,
+#     value="#user-name"
+# )
+
+# locate Username by css selector
+# username = driver.find_element(
+#     By.CSS_SELECTOR,
+#     value="input"
+# )
+
+# locate Username by css selector by parent tag
 username = driver.find_element(
-    By.TAG_NAME,
-    value="input"
+    By.CSS_SELECTOR,
+    value="div > input[id='user-name']"
 )
 
 # Password
@@ -37,9 +61,15 @@ password.send_keys("secret_sauce")
 # )
 
 # locate Login by classname
+# button = driver.find_element(
+#     By.CLASS_NAME,
+#     value='btn_action'
+# )
+
+# locate Login button by css selector of class(.)
 button = driver.find_element(
-    By.CLASS_NAME,
-    value='btn_action'
+    By.CSS_SELECTOR,
+    value='.btn_action'
 )
 
 button.click()
