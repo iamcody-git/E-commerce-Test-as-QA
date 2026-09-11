@@ -10,6 +10,9 @@ def test_has_title(page:Page):
     #login button
     page.get_by_role("button", name="Login").click()
 
+    #clcik to link
+    page.get_by_text("Sauce Labs Backpack")
+
     # add to cart
     page.locator("#add-to-cart-sauce-labs-backpack").click()
 
